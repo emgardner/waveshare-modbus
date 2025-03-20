@@ -1,0 +1,2 @@
+Pin<Box<dyn Future<Output = Result<Result<Vec<u16>, ExceptionCode>, tokio_modbus::error::Error>> + Send>>
+Pin<Box<dyn Future<Output = Result<Result<Vec<u16>, ExceptionCode>, tokio_modbus::Error>> + Send>>

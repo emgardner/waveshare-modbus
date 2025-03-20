@@ -1,0 +1,15 @@
+[package]
+name = "waveshare"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = "2.0.12"
+tokio = "1.43.0"
+tokio-modbus = { version = "*", default-features = false, features = ["rtu"], git = "https://github.com/slowtec/tokio-modbus" }
+#modbus-core = { git = "https://github.com/slowtec/modbus-core" }
+
+[dev-dependencies]
+anyhow = "1.0.95"
+tokio = { version = "1.43.0", features = ["full"] }
+tokio-serial = "5.4.5"
